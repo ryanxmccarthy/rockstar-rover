@@ -5,6 +5,7 @@ body {
 
 h2 {
   color: white;
+  font-family: 'Delius', cursive;
 }
 
 img {
@@ -141,6 +142,35 @@ button {
 }
 
 .gallery h2:after {
+  --direction: right;
+}
+
+.connect {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr auto auto;
+}
+
+.connect img {
+  width: auto;
+}
+
+.connect h2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.connect h2:before, .connect h2:after {
+  display: block;
+  content: '';
+  height: 10px;
+  background: linear-gradient(to var(--direction, left), grey, transparent);
+}
+
+.connect h2:after {
   --direction: right;
 }
 
