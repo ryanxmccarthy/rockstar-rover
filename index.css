@@ -7,16 +7,19 @@ h2 {
   color: white;
 }
 
-button {
-  background: rgba(255, 0, 0, 0.4);
-  border: 0;
-  padding: 10px 20px;
-  min-width: 300px;
-  font-size: 40px;
-}
-
 img {
   max-width: 100%;
+}
+
+button {
+  background: black;
+  border: black;
+  cursor: pointer;
+}
+
+.billabong {
+  font-family: billabong;
+  font-size: 60px;
 }
 
 .wrapper {
@@ -35,7 +38,7 @@ img {
 .hero {
   grid-area: hero;
   min-height: 400px;
-  background: white url(assets/images/titlecard.jpg);
+  background: white url(assets/images/logo.jpeg);
   background-size: cover;
   background-position: bottom right;
   padding: 50px;
@@ -46,7 +49,6 @@ img {
 }
 
 .hero > * {
-  background: rgba(255, 0, 0, 0.2);
   padding: 5px;
 
 }
@@ -60,7 +62,7 @@ img {
 }
 
 .cta {
-  background: rgba(255, 0, 0, 0.6);
+  background: #E80D11;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -79,13 +81,23 @@ img {
   grid-area: cta2;
 }
 
-.price {
+.primary {
   font-size: 60px;
   font-weight: 300px;
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+.secondary {
+  font-size: 25px;
+  font-family: 'Itim', cursive;
 }
 
 .about {
-  background: white;
+  background: black;
+  font-family: 'Delius', cursive;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: -120px;
   padding: 50px;
   display: grid;
   grid-template-columns: 400px 1fr;
@@ -132,24 +144,19 @@ img {
   --direction: right;
 }
 
-.footer {
-  padding: 10px;
-  margin-top: 50px;
-  background: black;
-  border-top: 1px solid grey;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+#name {
+  font-size: 75px;
+  font-weight: 300px;
+  font-family: 'Delius Swash Caps', cursive;
 }
 
-.footer button {
-  margin: 10px;
-  background: rgba(255, 0, 0, 0.6);
+#yelp {
+  width: 200px;
 }
 
-.footer p {
-  color: white;
-  grid-column: span 3;
-  text-align: center;
+@font-face {
+  font-family: billabong;
+  src: url('./assets/fonts/billabong.ttf');
 }
 
 @media (max-width: 700px) {
